@@ -42,7 +42,8 @@ class CircularView : UIView {
         
         
     
-        shapeLayer.path = shape.cgPath
+        shapeLayer.path = shape.cgPath // Clock Wise
+     // shapeLayer.path = shape.reversing().cgPath // Anti Clock Wise 
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.strokeColor = UIColor(red: 218/255.0, green: 165/255.0, blue: 44/255.0, alpha: 1.0).cgColor
         shapeLayer.lineWidth = 10.0
